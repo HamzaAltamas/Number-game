@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess my number game</title>
+  </head>
+  <body>
+    <!-- game box start -->
+    <div class="full-screen">
+      <h1 class="message">Wanna Play Number Game?</h1>
+      <div class="box">
+        <!-- player 1 -->
+        <input
+          type="text"
+          class="player1-name all-inputs"
+          placeholder="What is your name?"
+        />
+        <button class="player1-name-btn btn">Start Game</button>
+        <!-- player 1 name end -->
+
+        <!-- player 1 number  -->
+        <input
+          type="password"
+          class="player1-number all-inputs"
+          placeholder="Give a number between 1 to 10"
+        />
+        <button class="player1-number-btn btn">Let's Play</button>
+        <!-- player 1 number end -->
+
+        <!-- ===================== -->
+
+        <!-- player 2 name  -->
+        <input
+          type="text"
+          class="player2-name all-inputs"
+          placeholder="Enter your Name"
+        />
+        <button class="player2-name-btn btn">Start Game</button>
+        <!-- player 2 name end -->
+
+        <!-- player 2 number  -->
+        <p class="chance-txt-2-player chance-txt">
+          Chance: <span class="chance-2-player"></span>
+        </p>
+        <input type="number" class="player2-number all-inputs" />
+        <button class="player2-number-btn btn">Let's Play</button>
+        <!-- player 2 number end -->
+
+        <!-- ======================== -->
+
+        <!-- player 3 name  -->
+
+        <input
+          type="text"
+          class="player3-name all-inputs"
+          placeholder="Enter your Name"
+        />
+        <button class="player3-name-btn btn">Start Game</button>
+        <!-- player 3 name end -->
+
+        <!-- player 3 number  -->
+        <p class="chance-txt-3-player chance-txt">
+          Chance: <span class="chance-3-player">2</span>
+        </p>
+        <input type="number" class="player3-number all-inputs" />
+        <button class="player3-number-btn btn">Let's Play</button>
+        <!-- player 3 number end -->
+
+        <!-- error message -->
+        <div class="err-msg"></div>
+        <!-- error message end -->
+        <!-- winning txt start-->
+        <h1 class="winning-text">0</h1>
+        <h1 class="winning-text2">0</h1>
+        <h1 class="winning-text3">0</h1>
+        <!-- winning text end -->
+      </div>
+      <a href="javascript:location.reload(true)" class="repeat-btn"
+        ><i class="fa-solid fa-repeat repeat-btn"></i
+      ></a>
+    </div>
+    <!-- game box end -->
+    <script src="script.js"></script>
+  </body>
+</html>
